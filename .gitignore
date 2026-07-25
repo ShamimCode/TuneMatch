@@ -13,4 +13,5 @@ target/
 __pycache__/
 *.pyc
 venv/
-.venv/
+.venv/"data/dataset.csv" 
+".vscode/" 
