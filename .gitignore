@@ -1,0 +1,16 @@
+# Node
+node_modules/
+dist/
+.env
+
+# Java
+target/
+*.class
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
