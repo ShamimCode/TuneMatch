@@ -1,9 +1,17 @@
 package com.tunematch.backend.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
+@Data
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "playlist_songs")
 public class PlaylistSong {
 
     @EmbeddedId

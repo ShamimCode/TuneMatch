@@ -15,5 +15,5 @@ import java.io.Serializable;
 public class PlaylistSongId implements Serializable {
 
     private Long playlistId;
-    private String songId;
+    private String trackId;
 }
