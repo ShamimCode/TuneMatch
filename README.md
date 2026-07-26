@@ -14,7 +14,7 @@ TuneMatch started as a rule-based recommendation engine (JSP/Servlets/MySQL) and
 | Backend API     | Spring Boot (Java)                    |
 | ML Microservice | Python, FastAPI, scikit-learn, pandas |
 | Database        | MySQL                                 |
-| Dataset         | 1,087 curated songs across 12 genres  |
+| Dataset         | 3,000 curated songs across 12 genres  |
 
 ## Project Structure
 
