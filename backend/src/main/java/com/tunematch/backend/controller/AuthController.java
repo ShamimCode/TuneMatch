@@ -37,8 +37,8 @@ public class AuthController {
         if (userRepository.existsByUsername(request.username())) {
             return ResponseEntity.badRequest().body(Map.of("error", "Username already taken"));
         }
-        if (userRepository.existsByEmail(request.email())){
-            return ResponseEntity.badRequest().body(Map.of("error", "Email already exists"));
+        if (userRepository.existsByEmail(request.email())) {
+            return ResponseEntity.badRequest().body(Map.of("error", "Email already registered"));
         }
 
         User user = new User();
@@ -49,8 +49,10 @@ public class AuthController {
 
         userRepository.save(user);
 
-        String token = jwtUtil.generateToken(user.getUsername());
-        return ResponseEntity.ok(Map.of("token", token, "username", user.getUsername()));
+        return ResponseEntity.ok(Map.of(
+                "message", "Registration successful. Please log in.",
+                "username", user.getUsername()
+        ));
     }
 
     @PostMapping("/login")
